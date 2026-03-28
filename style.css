@@ -28,7 +28,7 @@
    RESET
 ═══════════════════════════════════════════ */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; font-size: 16px; }
+html { scroll-behavior: smooth; font-size: 16px;overflow-x: hidden; }
 body {
   font-family: var(--font-body);
   background: var(--black);
@@ -263,8 +263,8 @@ body::before {
 ═══════════════════════════════════════════ */
 #hero {
     margin-top: 10vh;
-  position: relative;
-  height: 100svh; min-height: 640px;
+  /* position: relative;
+  height: 100svh; min-height: 640px; */
   display: flex; align-items: flex-end;
   overflow: hidden;
 }
